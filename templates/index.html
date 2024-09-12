@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merge Web App</title>
+    <!--link rel="stylesheet" href="/static/style.css"-->
+</head>
+
+<body style=" font-family: Arial, sans-serif;background-color: #f8f8f8;margin: 0;padding: 0;">
+    <h1>PDF Merge</h1>
+    <form action="/" method="post">
+        <h2>Load PDF file</h2>
+        <div style="padding: 25px 25px 25px 25px;">
+            <label for="file">Load pdf file:</label><br>
+            <input type="file" id="mfile" name="mfile" /><br><br>
+            <!--input id="load" name="load_btn" type="submit" value="load_data"><br><br-->
+            <button id="load" name="data_btn" type="submit" value="load_pdf" class="btn btn-default">Add file</button>
+            <button id="merge" name="data_btn" type="submit" value="merge" class="btn btn-default">Merge files</button>
+        </div>
+    </form>
+    <div class="d-flex justify-content-center" style="padding: 25px 25px 25px 25px;">
+        <p>{{ msg }}</p>
+    </div> 
+</body>
+</html>
